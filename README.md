@@ -6,7 +6,7 @@
 
 次の2点を確認し、どちらかが基準と異なる場合に `swag-alert` ラベルの Issue を作成してリポジトリのオーナーを @メンションします。
 
-1. [swag-status.json](https://claude.dev/terminal/swag-status.json) の `.off` をソートし、`["plushie","stickers"]`（両方とも配布終了）と比較します。`.off` が文字列の配列でない場合や取得に失敗した場合は、エラーで終了します。
+1. [swag-status.json](https://claude.dev/terminal/swag-status.json) の `.off` をソートし、`["boo","plushie","stickers"]`（すべて配布終了）と比較します。`.off` が文字列の配列でない場合や取得に失敗した場合は、エラーで終了します。
 2. Terminal の HTML から `https://app.brilliantmade.com/r/` で始まるフォーム URL を抽出し、重複を除いて次の2件と比較します。追加・削除に加え、URL がすべて消えた場合も通知します。
 
    - https://app.brilliantmade.com/r/claude-code-plushies
